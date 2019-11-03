@@ -18,7 +18,7 @@ namespace English
             Times time;
             string strToTranslate;
             string strAfterTranslate;
-
+            Console.WriteLine("Нажать 1 раз Enter для перевода, 2 раза - для нового предложения");
             while (true) { 
                 verb = vl.getRandom();
                 pronoun = (Pronoun)new Random().Next(8);

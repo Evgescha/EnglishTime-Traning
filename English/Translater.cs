@@ -18,7 +18,10 @@ namespace English
         static string text ="text=";
         public static string translite(string strToTranslate) {
             string answer;
-            WebRequest request = WebRequest.Create(basic+lang+key+text+strToTranslate);
+            string url = basic + lang + key + text + strToTranslate;
+            
+            //Console.WriteLine("for url:"+url);
+            WebRequest request = WebRequest.Create(url);
             WebResponse response = request.GetResponse();
             using (System.IO.Stream stream = response.GetResponseStream())
             {
