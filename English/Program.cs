@@ -16,6 +16,9 @@ namespace English
             Verb verb;
             Pronoun pronoun;
             Times time;
+            string strToTranslate;
+            string strAfterTranslate;
+
             while (true) { 
                 verb = vl.getRandom();
                 pronoun = (Pronoun)new Random().Next(8);
@@ -25,7 +28,12 @@ namespace English
                 Console.WriteLine("Глагол: "+verb.Word);
                 Console.WriteLine("Местоимение: "+pronoun);
 
-                Console.WriteLine(timesVerbcs.getStringTime(verb, pronoun, time));
+                strToTranslate = timesVerbcs.getStringTime(verb, pronoun, time);
+                Console.WriteLine(strToTranslate);
+                strAfterTranslate = Translater.translite(strToTranslate);
+                Console.ReadLine();
+                
+                Console.WriteLine(strAfterTranslate);
                 Console.ReadLine();
             }
 

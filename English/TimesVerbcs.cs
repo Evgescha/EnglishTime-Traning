@@ -29,7 +29,7 @@ namespace English
             AboutPronoun.About(pronoun,ref person, ref number, ref gender);
 
             startTimeMethod(time);
-            return $"STRING: {pronoun} {tempVerb}";
+            return $"{pronoun} {tempVerb}";
             
         }
         public void startTimeMethod(Times time) {
