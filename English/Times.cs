@@ -11,9 +11,9 @@ namespace English
         PastQuestion = 1,
         PastSimple = 2,
         PastNegative = 3,
-        PerfectQuestion = 4,
-        PerfectSimple = 5,
-        PerfectNegative = 6,
+        PresentQuestion = 4,
+        PresentSimple = 5,
+        PresentNegative = 6,
         FutureQuestion = 7,
         FutureSimple = 8,
         FutureNEgative = 9

@@ -14,18 +14,22 @@ namespace English
                 case Pronoun.Я:
                     person = Person.First;
                     number = Number.Singular;
+                    gender = Gender.M;
                     break;
                 case Pronoun.Мы:
                     person = Person.First;
                     number = Number.Plural;
+                    gender = Gender.P;
                     break;
                 case Pronoun.Ты:
                     person = Person.Second;
                     number = Number.Singular;
+                    gender = Gender.MAFA;
                     break;
                 case Pronoun.Вы:
                     person = Person.Second;
                     number = Number.Plural;
+                    gender = Gender.P;
                     break;
                 case Pronoun.Он:
                     person = Person.Third;
@@ -45,6 +49,7 @@ namespace English
                 case Pronoun.Они:
                     person = Person.Third;
                     number = Number.Plural;
+                    gender = Gender.P;
                     break;
 
             }
